@@ -172,7 +172,7 @@ a { color: inherit; text-decoration: none; }
 .story { background: var(--cream); }
 .story__grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 56px; align-items: center; }
 .story__image { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
-.story__image img { width: 100%; height: 480px; object-fit: cover; }
+.story__image img { width: 100%; height: 480px; object-fit: cover; object-position: top center; }
 .story__text p { font-size: 1.1rem; color: var(--coffee-mid); }
 
 /* ===== תערובת קפה (רצועה עם תמונת רקע) ===== */

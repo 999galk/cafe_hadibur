@@ -10,7 +10,7 @@ const IMG = {
   vibeCart: '/images/dibur.webp',      // חזית העגלה הוורודה עם השלט ביום
   vibeSpace: '/images/place.jpg',      // אזור הישיבה מתחת לפרגולה עם האורות
   vibeInterior: '/images/cart.webp',   // מאחורי הדלפק — שקי קפה, פינג׳אן וכוסות
-  itzik: '/images/itzik-portrait.jpg', // דיוקן סטודיו של איציק עם הפולים
+  itzik: '/images/STK_3120.jpg',       // דיוקן סטודיו של איציק עם הפולים
   espresso: '/images/557610605_18080964356479610_8692264979329521042_n.jpeg',
   latte: '/images/coffee.jpeg',        // לאטה עם לב על משטח עץ
   croissant: '/images/bakery.webp',    // קרואסון ובבקה על מגש עיתון
