@@ -7,10 +7,7 @@ export default function Menu() {
         <div className="section__head">
           <span className="eyebrow">בתיאבון</span>
           <h2 className="section__title">{menu.title}</h2>
-          <p className="section__note">{menu.note}</p>
         </div>
-
-        {menu.special && <div className="menu__special">{menu.special}</div>}
 
         <div className="menu__grid">
           {menu.categories.map((cat) => (
@@ -34,6 +31,10 @@ export default function Menu() {
               {cat.note && <p className="menu__cat-note">{cat.note}</p>}
             </div>
           ))}
+        </div>
+
+        <div className="menu__footnotes">
+          {menu.note && <p className="menu__footnote">{menu.note}</p>}
         </div>
       </div>
     </section>

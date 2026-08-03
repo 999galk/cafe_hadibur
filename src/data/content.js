@@ -69,8 +69,7 @@ export const about = {
 // tag = תגית (למשל 'טבעוני'). desc = תיאור קצר מתחת לשם.
 export const menu = {
   title: 'התפריט',
-  note: 'מחירים בשקלים · ניתן לבחור תחליפי חלב (שיבולת שועל / שקדים / סויה) בתוספת ₪2.',
-  special: 'יש דיבור על ספיישל! ואיך תדעו אם לא תשאלו?',
+  note: '* ניתן לבחור תחליפי חלב (שיבולת שועל / שקדים / סויה) בתוספת ₪2.',
   categories: [
     {
       name: 'כריכים',
@@ -166,26 +165,31 @@ export const press = {
     {
       source: 'ישראל היום',
       title: 'ביקורת מסעדות: קפה הדיבור, פרדס חנה',
+      teaser: 'עצירה מתוקה באורוות האמנים — קפה מוקפד, מאפים בעבודת יד ואווירה ביתית.',
       url: 'https://www.israelhayom.co.il/food/restaurant-reviews/article/20604985',
     },
     {
+      source: 'חדשות 13',
+      title: 'המדריך לטייל הרעב',
+      teaser: 'הבורקס מבצק הקרואסון והקפה המיוחד שגונבים את ההצגה.',
+      url: 'https://13tv.co.il/item/yummies/food-news/solef-904809973/',
+    },
+    {
       source: 'Coffee Carts',
-      title: 'קפה הדיבור — עגלת קפה עם נשמה',
+      title: 'עגלת קפה עם נשמה',
+      teaser: 'מעגלה קטנה בצפון ועד פינה שכולם מכירים — הסיפור של איציק והדיבור.',
       url: 'https://www.coffeecarts.co.il/%D7%A7%D7%A4%D7%94-%D7%94%D7%93%D7%99%D7%91%D7%95%D7%A8-%D7%A2%D7%92%D7%9C%D7%AA-%D7%A7%D7%A4%D7%94/',
     },
     {
       source: 'העיר News',
       title: 'מקום שבו קפה טוב ואנשים נפגשים',
+      teaser: 'מקום עם נשמה שנולד מאהבה לאוכל טוב, לאנשים ולקפה מצוין.',
       url: 'https://citynews.co.il/%D7%A7%D7%A4%D7%94-%D7%94%D7%93%D7%99%D7%91%D7%95%D7%A8/',
     },
     {
-      source: 'חדשות 13',
-      title: 'המדריך לטייל הרעב: בורקס וקפה מהחלומות',
-      url: 'https://13tv.co.il/item/yummies/food-news/solef-904809973/',
-    },
-    {
       source: 'Passport News',
-      title: 'הבועה של השרון: יום של שקט, אוכל ואמנות',
+      title: 'הבועה של השרון',
+      teaser: 'יום של שקט בין אמנים, אוכל טוב וכוס קפה — הבריחה המושלמת בשרון.',
       url: 'https://passportnews.co.il/article/204369',
     },
   ],
