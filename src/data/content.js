@@ -4,26 +4,29 @@
 //  שדות שמסומנים ב-TODO צריך לאשר / להשלים מול איציק.
 // ==========================================================================
 
-// תמונות אמיתיות של המקום. שומרים את הקבצים בתיקייה public/images/
-// עם השמות שכאן (ראו קובץ IMAGES.md בשורש הפרויקט).
+// תמונות אמיתיות של המקום (בתיקייה public/images/).
 const IMG = {
-  hero: '/images/hero.jpg',            // חזית העגלה הוורודה בערב, איציק מגיש
-  vibeCart: '/images/vibe-cart.jpg',   // העגלה הוורודה עם הצמחים ביום
-  vibeSpace: '/images/vibe-space.jpg', // אזור הישיבה מתחת לפרגולה עם האורות
-  vibeInterior: '/images/vibe-interior.jpg', // מאחורי הדלפק, שקי קפה ומכונה
-  itzik: '/images/itzik.jpg',          // איציק עם הסינר / מגיש מגש
-  espresso: '/images/espresso.jpg',    // מזיגת אספרסו לכוס
-  latte: '/images/latte.jpg',          // קורטדו/לאטה עם לב על עץ
-  croissant: '/images/croissant.jpg',  // קרואסון ובבקה על מגש עיתון
-  boureka: '/images/boureka.jpg',      // הבורקס שומשום עם חמוצים ורטבים
-  sandwich: '/images/sandwich.jpg',    // כריכי לחם שומשום / באגט
-  soup: '/images/soup.jpg',            // מרק היום עם קרוטונים + לוח
-  beansBag: '/images/beans-bag.jpg',   // שקיות קראפט עם חותמת הלוגו
-  beansGreen: '/images/beans-green.jpg', // פולים ירוקים / גרניטה
+  hero: '/images/cart.jpg',            // ערב — איציק מגיש ללקוחות בעגלה
+  vibeCart: '/images/dibur.webp',      // חזית העגלה הוורודה עם השלט ביום
+  vibeSpace: '/images/place.jpg',      // אזור הישיבה מתחת לפרגולה עם האורות
+  vibeInterior: '/images/cart.webp',   // מאחורי הדלפק — שקי קפה, פינג׳אן וכוסות
+  itzik: '/images/cart1.jpg',          // איציק בסינר בחלון העגלה
+  espresso: '/images/557610605_18080964356479610_8692264979329521042_n.jpeg',
+  latte: '/images/coffee.jpeg',        // לאטה עם לב על משטח עץ
+  croissant: '/images/bakery.webp',    // קרואסון ובבקה על מגש עיתון
+  boureka: '/images/burekas2.jpg',     // הבורקס הספירלי עם חמוצים ורטבים
+  sandwich: '/images/food.webp',       // כריך באגט עם פסטו וזיתים
+  soup: '/images/marak.jpg',           // מרק היום עם קרוטוני פרצל + לוח
+  beansBag: '/images/coffee-beans2.jpeg', // שקיות קראפט עם חותמת הדיבור
+  beansGreen: '/images/coffee-beans.jpeg', // פולים קלויים בשקית
 }
+
+// הלוגו (רקע לבן) — מופיע בתפריט העליון ובפוטר.
+const LOGO = '/images/logo2.jpeg'
 
 export const business = {
   name: 'קפה הדיבור',
+  logo: LOGO,
   tagline: 'קפה שנולד מתוך אהבה — פרדס חנה',
   address: 'אורוות האומנים, פרדס חנה-כרכור',
   // TODO: טלפון + וואטסאפ אמיתיים

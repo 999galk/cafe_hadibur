@@ -23,9 +23,8 @@ export default function Navbar() {
   return (
     <header className={`nav ${scrolled ? 'nav--solid' : ''}`}>
       <div className="nav__inner container">
-        <a href="#top" className="nav__logo" onClick={() => setOpen(false)}>
-          <span className="nav__logo-mark">☕</span>
-          <span className="nav__logo-text">{business.name}</span>
+        <a href="#top" className="nav__logo" onClick={() => setOpen(false)} aria-label={business.name}>
+          <img src={business.logo} alt={business.name} className="nav__logo-img" />
         </a>
 
         <button
