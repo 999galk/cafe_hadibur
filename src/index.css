@@ -163,10 +163,23 @@ a { color: inherit; text-decoration: none; }
   margin: 0 0 22px; padding-bottom: 12px; border-bottom: 2px solid var(--cream-2);
 }
 .menu__list { list-style: none; margin: 0; padding: 0; }
-.menu__item { display: flex; align-items: baseline; gap: 8px; padding: 9px 0; }
+.menu__item { padding: 11px 0; border-bottom: 1px solid #f0e6d8; }
+.menu__item:last-child { border-bottom: 0; }
+.menu__item-row { display: flex; align-items: baseline; gap: 8px; }
 .menu__item-name { font-weight: 500; }
-.menu__dots { flex: 1; border-bottom: 2px dotted #d9c7b5; transform: translateY(-4px); }
-.menu__price { font-weight: 700; color: var(--coffee-mid); }
+.menu__dots { flex: 1; border-bottom: 2px dotted #d9c7b5; transform: translateY(-4px); min-width: 14px; }
+.menu__price { font-weight: 700; color: var(--coffee-mid); white-space: nowrap; }
+.menu__desc { margin: 4px 0 0; font-size: 0.85rem; color: var(--muted); line-height: 1.5; }
+.menu__tag {
+  display: inline-block; margin-inline-start: 8px; padding: 1px 9px; border-radius: 999px;
+  font-size: 0.68rem; font-weight: 700; background: #e7f3e7; color: #3f7d3f; vertical-align: middle;
+}
+.menu__cat-note { margin: 16px 0 0; font-size: 0.8rem; color: var(--muted); font-style: italic; }
+.menu__special {
+  max-width: 620px; margin: 0 auto 40px; text-align: center;
+  background: var(--pink); color: #fff; font-family: var(--font-head); font-weight: 700;
+  font-size: 1.15rem; padding: 14px 22px; border-radius: 999px; box-shadow: 0 10px 22px -12px var(--pink);
+}
 
 /* ===== סיפור ===== */
 .story { background: var(--cream); }
