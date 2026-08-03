@@ -13,7 +13,8 @@ export default function Press() {
             <a key={i} href={a.url} className="press__card" target="_blank" rel="noreferrer">
               <span className="press__source">{a.source}</span>
               <span className="press__title">{a.title}</span>
-              <span className="press__arrow">←</span>
+              {a.teaser && <p className="press__teaser">״{a.teaser}״</p>}
+              <span className="press__read">לכתבה המלאה ←</span>
             </a>
           ))}
         </div>
