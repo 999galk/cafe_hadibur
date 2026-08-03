@@ -48,7 +48,7 @@ export default function Contact() {
           <div className="contact__map">
             <iframe
               title="מפה"
-              src="https://www.google.com/maps?q=פרדס%20חנה%20כרכור&output=embed"
+              src="https://www.google.com/maps?q=קפה%20הדיבור%20אורוות%20האמנים%20פרדס%20חנה%20כרכור&output=embed"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             />
