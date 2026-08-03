@@ -7,12 +7,14 @@ import Coffee from './components/Coffee.jsx'
 import Press from './components/Press.jsx'
 import Contact from './components/Contact.jsx'
 import Footer from './components/Footer.jsx'
+import AccessibilityWidget from './components/AccessibilityWidget.jsx'
 
 export default function App() {
   return (
     <>
+      <a href="#menu" className="skip-link">דלג לתוכן</a>
       <Navbar />
-      <main>
+      <main id="content">
         <Hero />
         <About />
         <Menu />
@@ -22,6 +24,7 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
+      <AccessibilityWidget />
     </>
   )
 }

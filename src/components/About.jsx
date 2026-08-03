@@ -1,5 +1,11 @@
 import { about } from '../data/content.js'
 
+const ABOUT_ALTS = [
+  'עגלת הקפה הוורודה של הדיבור עם צמחים ופרחים',
+  'אזור הישיבה של בית הקפה מתחת לפרגולה עם שרשרת אורות',
+  'מאחורי הדלפק — שקי קפה ומכונת אספרסו',
+]
+
 export default function About() {
   return (
     <section id="about" className="section about">
@@ -13,7 +19,7 @@ export default function About() {
           <div className="about__images">
             {about.images.map((src, i) => (
               <div key={i} className={`about__img about__img--${i + 1}`}>
-                <img src={src} alt="" loading="lazy" />
+                <img src={src} alt={ABOUT_ALTS[i] || 'קפה הדיבור'} loading="lazy" />
               </div>
             ))}
           </div>
