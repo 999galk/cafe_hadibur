@@ -31,8 +31,13 @@ export default function Contact() {
             </div>
 
             <div className="contact__actions">
-              <a className="btn btn--primary" href={business.mapsUrl} target="_blank" rel="noreferrer">
-                ניווט ב-Waze / Maps
+              {business.whatsapp && (
+                <a className="btn btn--primary" href={business.whatsapp} target="_blank" rel="noreferrer">
+                  וואטסאפ
+                </a>
+              )}
+              <a className="btn btn--ghost" href={business.mapsUrl} target="_blank" rel="noreferrer">
+                ניווט ב-Maps
               </a>
               <a className="btn btn--ghost" href={business.instagram} target="_blank" rel="noreferrer">
                 אינסטגרם

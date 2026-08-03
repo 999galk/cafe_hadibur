@@ -10,7 +10,7 @@ const IMG = {
   vibeCart: '/images/dibur.webp',      // חזית העגלה הוורודה עם השלט ביום
   vibeSpace: '/images/place.jpg',      // אזור הישיבה מתחת לפרגולה עם האורות
   vibeInterior: '/images/cart.webp',   // מאחורי הדלפק — שקי קפה, פינג׳אן וכוסות
-  itzik: '/images/cart1.jpg',          // איציק בסינר בחלון העגלה
+  itzik: '/images/itzik-portrait.jpg', // דיוקן סטודיו של איציק עם הפולים
   espresso: '/images/557610605_18080964356479610_8692264979329521042_n.jpeg',
   latte: '/images/coffee.jpeg',        // לאטה עם לב על משטח עץ
   croissant: '/images/bakery.webp',    // קרואסון ובבקה על מגש עיתון
@@ -29,14 +29,13 @@ export const business = {
   logo: LOGO,
   tagline: 'קפה שנולד מתוך אהבה — פרדס חנה',
   address: 'אורוות האומנים, פרדס חנה-כרכור',
-  // TODO: טלפון + וואטסאפ אמיתיים
-  phone: '000-0000000',
-  whatsapp: '',
+  phone: '052-3478542',
+  whatsapp: 'https://wa.me/972523478542',
   instagram: 'https://www.instagram.com/cafe_hadibur/',
   facebook: 'https://www.facebook.com/Cafehadibur',
   mapsUrl: 'https://www.google.com/maps/search/?api=1&query=קפה+הדיבור+אורוות+האומנים+פרדס+חנה',
-  // ליצירת קשר בנושא נגישות (מופיע בהצהרת הנגישות)
-  accessibilityEmail: '',   // TODO
+  // נושא נגישות מטופל דרך אותו טלפון (business.phone)
+  accessibilityEmail: '',
 }
 
 // TODO: לאשר שעות (שבת לא הופיעה בכתבות — לאשר אם פתוח/סגור)
