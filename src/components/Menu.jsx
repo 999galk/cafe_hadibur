@@ -34,7 +34,6 @@ export default function Menu() {
         </div>
 
         <div className="menu__footnotes">
-          {menu.special && <p className="menu__footnote menu__footnote--special">{menu.special}</p>}
           {menu.note && <p className="menu__footnote">{menu.note}</p>}
         </div>
       </div>
