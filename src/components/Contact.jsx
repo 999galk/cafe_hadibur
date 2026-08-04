@@ -36,6 +36,11 @@ export default function Contact() {
                   וואטסאפ
                 </a>
               )}
+              {business.wazeUrl && (
+                <a className="btn btn--ghost" href={business.wazeUrl} target="_blank" rel="noreferrer">
+                  ניווט ב-Waze
+                </a>
+              )}
               <a className="btn btn--ghost" href={business.mapsUrl} target="_blank" rel="noreferrer">
                 ניווט ב-Maps
               </a>
