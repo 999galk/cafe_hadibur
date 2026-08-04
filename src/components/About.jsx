@@ -1,10 +1,5 @@
 import { about } from '../data/content.js'
-
-const ABOUT_ALTS = [
-  'חזית קפה הדיבור — השלט הוורוד והכניסה באורוות האמנים',
-  'אזור הישיבה של בית הקפה מתחת לפרגולה עם שרשרת אורות',
-  'מאחורי הדלפק — שקי קפה ומכונת אספרסו',
-]
+import RotatingImage from './RotatingImage.jsx'
 
 export default function About() {
   return (
@@ -17,9 +12,14 @@ export default function About() {
             <p>{about.text}</p>
           </div>
           <div className="about__images">
-            {about.images.map((src, i) => (
+            {about.frames.map((frame, i) => (
               <div key={i} className={`about__img about__img--${i + 1}`}>
-                <img src={src} alt={ABOUT_ALTS[i] || 'קפה הדיבור'} loading="lazy" />
+                <RotatingImage
+                  images={frame.images}
+                  alt={frame.alt}
+                  interval={4200 + i * 700}
+                  start={i}
+                />
               </div>
             ))}
           </div>

@@ -61,7 +61,12 @@ export const hero = {
 export const about = {
   title: 'האווירה שלנו',
   text: 'מה שהתחיל כעגלת קפה קטנה בצפון הפך לפינה חמה שכולם מכירים. אצלנו כל כוס מוקפדת, כל מאפה נאפה במקום, ותמיד יש כיסא פנוי, מוזיקה טובה וריח של קפה טרי באוויר. מקום עם נשמה — לשבת בו לבד עם ספר, או להיפגש עם כל השכונה.',
-  images: [IMG.vibeCart, IMG.vibeSpace, IMG.vibeInterior],
+  // כל מסגרת מציגה תמונות שמתחלפות אוטומטית (אווירה + אוכל). להוסיף תמונה? מוסיפים לרשימה.
+  frames: [
+    { alt: 'פינות ומאפים בקפה הדיבור', images: [IMG.vibeCart, IMG.vibeSpace, IMG.vibeInterior, IMG.croissant] },
+    { alt: 'מנות בקפה הדיבור', images: [IMG.sandwich, IMG.boureka, IMG.soup, IMG.latte] },
+    { alt: 'עוד טעימות מקפה הדיבור', images: ['/images/bakery3.webp', '/images/sandwitch.jpeg', '/images/drink.jpg', IMG.espresso] },
+  ],
 }
 
 // ----- תפריט -----

@@ -149,12 +149,13 @@ a { color: inherit; text-decoration: none; }
 .about { background: var(--cream); }
 .about__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
 .about__text p { font-size: 1.12rem; color: var(--coffee-mid); }
-.about__images { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 14px; }
-.about__img { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
-.about__img img { width: 100%; height: 100%; object-fit: cover; }
+.about__images { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 172px 172px; gap: 14px; }
+.about__img { position: relative; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
 .about__img--1 { grid-row: span 2; }
-.about__img--1 img { min-height: 340px; }
-.about__img--2 img, .about__img--3 img { height: 163px; }
+/* קרוסלה: כל התמונות מונחות זו על זו, הפעילה ב-fade */
+.rimg { position: absolute; inset: 0; }
+.rimg__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 1s ease; }
+.rimg__img.is-active { opacity: 1; }
 
 /* ===== תפריט ===== */
 .menu { background: var(--cream-2); }
