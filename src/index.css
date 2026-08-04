@@ -152,7 +152,7 @@ a { color: inherit; text-decoration: none; }
 .about__images { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 172px 172px; gap: 14px; }
 .about__img { position: relative; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
 .about__img--1 { grid-row: span 2; }
-/* קרוסלה: כל התמונות מונחות זו על זו, הפעילה ב-fade */
+/* קרוסלה: כל התמונות מונחות זו על זו, הפעילה ב-fade. התמונות מותאמות לאוריינטציית המסגרת. */
 .rimg { position: absolute; inset: 0; }
 .rimg__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 1s ease; }
 .rimg__img.is-active { opacity: 1; }
@@ -226,7 +226,8 @@ a { color: inherit; text-decoration: none; }
 .contact__block h3 { font-family: var(--font-head); font-size: 1.25rem; margin: 0 0 12px; color: var(--coffee); }
 .hours { list-style: none; margin: 0; padding: 0; max-width: 320px; }
 .hours li { display: flex; justify-content: space-between; padding: 7px 0; border-bottom: 1px dashed #e2d4c4; }
-.contact__actions { display: flex; gap: 12px; margin-top: 30px; flex-wrap: wrap; }
+.contact__actions { display: flex; gap: 10px; margin-top: 30px; flex-wrap: wrap; }
+.contact__actions .btn { padding: 11px 20px; font-size: 0.92rem; }
 .contact__map { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); min-height: 380px; }
 .contact__map iframe { width: 100%; height: 100%; min-height: 380px; border: 0; }
 

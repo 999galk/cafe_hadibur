@@ -14,7 +14,6 @@ const IMG = {
   espresso: '/images/557610605_18080964356479610_8692264979329521042_n.jpeg',
   latte: '/images/coffee.jpeg',        // לאטה עם לב על משטח עץ
   croissant: '/images/bakery.webp',    // קרואסון ובבקה על מגש עיתון
-  boureka: '/images/burekas2.jpg',     // הבורקס הספירלי עם חמוצים ורטבים
   sandwich: '/images/food.webp',       // כריך באגט עם פסטו וזיתים
   soup: '/images/marak.jpg',           // מרק היום עם קרוטוני פרצל + לוח
   beansBag: '/images/coffee-beans2.jpeg', // שקיות קראפט עם חותמת הדיבור
@@ -61,11 +60,15 @@ export const hero = {
 export const about = {
   title: 'האווירה שלנו',
   text: 'מה שהתחיל כעגלת קפה קטנה בצפון הפך לפינה חמה שכולם מכירים. אצלנו כל כוס מוקפדת, כל מאפה נאפה במקום, ותמיד יש כיסא פנוי, מוזיקה טובה וריח של קפה טרי באוויר. מקום עם נשמה — לשבת בו לבד עם ספר, או להיפגש עם כל השכונה.',
-  // כל מסגרת מציגה תמונות שמתחלפות אוטומטית (אווירה + אוכל). להוסיף תמונה? מוסיפים לרשימה.
+  // כל מסגרת מציגה תמונות שמתחלפות אוטומטית (אווירה + אוכל).
+  // חשוב: להתאים אוריינטציה למסגרת — המסגרת הגבוהה = תמונות אנכיות; הקטנות = תמונות רוחביות.
   frames: [
-    { alt: 'פינות ומאפים בקפה הדיבור', images: [IMG.vibeCart, IMG.vibeSpace, IMG.vibeInterior, IMG.croissant] },
-    { alt: 'מנות בקפה הדיבור', images: [IMG.sandwich, IMG.boureka, IMG.soup, IMG.latte] },
-    { alt: 'עוד טעימות מקפה הדיבור', images: ['/images/bakery3.webp', '/images/sandwitch.jpeg', '/images/drink.jpg', IMG.espresso] },
+    // מסגרת גבוהה (אנכית) — תמונות אנכיות בלבד: אווירה + אוכל
+    { alt: 'פינות ומנות בקפה הדיבור', images: [IMG.vibeCart, IMG.soup, IMG.vibeInterior, '/images/drink.jpg', '/images/food2.webp', '/images/10096315_1645300577855.jpeg', IMG.beansBag] },
+    // מסגרת קטנה (רוחבית)
+    { alt: 'מנות בקפה הדיבור', images: [IMG.sandwich, IMG.croissant] },
+    // מסגרת קטנה (רוחבית) — place + לאטה רוחבי (ממורכז על הכוס) + כריך
+    { alt: 'פינות ומנות בקפה הדיבור', images: [IMG.vibeSpace, '/images/coffee-wide.jpg', '/images/food3.jpg'] },
   ],
 }
 

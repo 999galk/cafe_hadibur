@@ -38,11 +38,11 @@ export default function Contact() {
               )}
               {business.wazeUrl && (
                 <a className="btn btn--ghost" href={business.wazeUrl} target="_blank" rel="noreferrer">
-                  ניווט ב-Waze
+                  Waze
                 </a>
               )}
               <a className="btn btn--ghost" href={business.mapsUrl} target="_blank" rel="noreferrer">
-                ניווט ב-Maps
+                מפה
               </a>
               <a className="btn btn--ghost" href={business.instagram} target="_blank" rel="noreferrer">
                 אינסטגרם

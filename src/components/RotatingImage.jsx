@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 
-// מציג רשימת תמונות שמתחלפות ב-fade. עוצר אוטומטית אם המשתמש ביקש "תנועה מופחתת".
+// מציג רשימת תמונות שמתחלפות ב-fade (התמונות מותאמות לאוריינטציה של המסגרת).
+// עוצר אוטומטית אם המשתמש ביקש "תנועה מופחתת".
 export default function RotatingImage({ images, alt, interval = 4500, start = 0 }) {
   const [idx, setIdx] = useState(start % images.length)
 
