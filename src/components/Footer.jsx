@@ -10,7 +10,6 @@ export default function Footer() {
       <div className="container footer__inner">
         <div className="footer__brand">
           <img src={business.logo} alt={business.name} className="footer__logo-img" />
-          <p>{business.tagline}</p>
         </div>
 
         <div className="footer__social">
