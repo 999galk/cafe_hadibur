@@ -15,6 +15,7 @@ export default function Footer() {
         <div className="footer__social">
           <a href={business.instagram} target="_blank" rel="noreferrer">אינסטגרם</a>
           <a href={business.facebook} target="_blank" rel="noreferrer">פייסבוק</a>
+          {business.wazeUrl && <a href={business.wazeUrl} target="_blank" rel="noreferrer">Waze</a>}
           <a href={business.mapsUrl} target="_blank" rel="noreferrer">מפה</a>
         </div>
       </div>
