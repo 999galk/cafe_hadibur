@@ -1,12 +1,12 @@
 import { useEffect, useRef, useState } from 'react'
-import { a11yStatement, business } from '../data/content.js'
+import { useLegal } from './LegalModals.jsx'
 
 const FONT_STEPS = [1, 1.1, 1.2, 1.3]
 const STORE_KEY = 'hadibur-a11y'
 
 export default function AccessibilityWidget() {
   const [open, setOpen] = useState(false)
-  const [statementOpen, setStatementOpen] = useState(false)
+  const { open: openLegal } = useLegal()
   const [fontLevel, setFontLevel] = useState(0)
   const [contrast, setContrast] = useState(false)
   const [underline, setUnderline] = useState(false)
@@ -78,7 +78,7 @@ export default function AccessibilityWidget() {
           </button>
 
           <div className="a11y-panel__foot">
-            <button className="a11y-link" onClick={() => { setStatementOpen(true); setOpen(false) }}>
+            <button className="a11y-link" onClick={() => { openLegal('accessibility'); setOpen(false) }}>
               הצהרת נגישות
             </button>
             <button className="a11y-reset" onClick={reset}>איפוס</button>
@@ -86,25 +86,6 @@ export default function AccessibilityWidget() {
         </div>
       )}
 
-      {statementOpen && (
-        <div className="a11y-modal" role="dialog" aria-modal="true" aria-label={a11yStatement.title}>
-          <div className="a11y-modal__backdrop" onClick={() => setStatementOpen(false)} />
-          <div className="a11y-modal__box">
-            <button className="a11y-x" aria-label="סגירה" onClick={() => setStatementOpen(false)}>✕</button>
-            <h2>{a11yStatement.title}</h2>
-            <p className="a11y-modal__date">{a11yStatement.updated}</p>
-            {a11yStatement.paragraphs.map((p, i) => <p key={i}>{p}</p>)}
-            {(business.accessibilityEmail || business.phone) && (
-              <p>
-                יצירת קשר בנושא נגישות:{' '}
-                {business.accessibilityEmail && <a href={`mailto:${business.accessibilityEmail}`}>{business.accessibilityEmail}</a>}
-                {business.accessibilityEmail && business.phone ? ' · ' : ''}
-                {business.phone && <a href={`tel:${business.phone.replace(/[^0-9+]/g, '')}`}>{business.phone}</a>}
-              </p>
-            )}
-          </div>
-        </div>
-      )}
     </>
   )
 }

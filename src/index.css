@@ -126,7 +126,9 @@ a { color: inherit; text-decoration: none; }
 }
 .hero__overlay {
   position: absolute; inset: 0;
-  background: linear-gradient(180deg, rgba(52,33,26,0.45) 0%, rgba(52,33,26,0.25) 40%, rgba(232,139,154,0.55) 100%);
+  background:
+    radial-gradient(120% 90% at 50% 45%, rgba(20,12,8,0.35) 0%, rgba(20,12,8,0.62) 100%),
+    linear-gradient(180deg, rgba(20,12,8,0.55) 0%, rgba(20,12,8,0.4) 45%, rgba(52,33,26,0.72) 100%);
 }
 .hero__content { position: relative; z-index: 2; margin: 0 auto; }
 .hero__eyebrow { letter-spacing: 0.24em; font-weight: 700; text-transform: uppercase; font-size: 0.82rem; margin: 0 0 14px; opacity: 0.95; }
@@ -237,6 +239,12 @@ a { color: inherit; text-decoration: none; }
 .footer__social a { font-weight: 500; transition: color 0.2s; }
 .footer__social a:hover { color: var(--mustard); }
 .footer__copy { border-top: 1px solid rgba(255,255,255,0.12); padding: 18px 0; font-size: 0.85rem; color: #c9b3a6; text-align: center; }
+.footer__legal { display: flex; gap: 10px; justify-content: center; align-items: center; margin-bottom: 8px; }
+.footer__legal-link {
+  background: none; border: 0; padding: 2px; cursor: pointer; font: inherit;
+  color: var(--cream); text-decoration: underline; transition: color 0.2s;
+}
+.footer__legal-link:hover { color: var(--mustard); }
 
 /* ===== רספונסיבי ===== */
 @media (max-width: 860px) {

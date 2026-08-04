@@ -8,10 +8,11 @@ import Press from './components/Press.jsx'
 import Contact from './components/Contact.jsx'
 import Footer from './components/Footer.jsx'
 import AccessibilityWidget from './components/AccessibilityWidget.jsx'
+import { LegalProvider } from './components/LegalModals.jsx'
 
 export default function App() {
   return (
-    <>
+    <LegalProvider>
       <a href="#menu" className="skip-link">דלג לתוכן</a>
       <Navbar />
       <main id="content">
@@ -25,6 +26,6 @@ export default function App() {
       </main>
       <Footer />
       <AccessibilityWidget />
-    </>
+    </LegalProvider>
   )
 }
