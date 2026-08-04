@@ -64,10 +64,10 @@ export const about = {
   // חשוב: להתאים אוריינטציה למסגרת — המסגרת הגבוהה = תמונות אנכיות; הקטנות = תמונות רוחביות.
   frames: [
     // מסגרת גבוהה (אנכית) — תמונות אנכיות בלבד: אווירה + אוכל
-    { alt: 'פינות ומנות בקפה הדיבור', images: [IMG.vibeCart, IMG.soup, IMG.vibeInterior, '/images/drink.jpg', '/images/food2.webp', '/images/10096315_1645300577855.jpeg', IMG.beansBag] },
+    { alt: 'פינות ומנות בקפה הדיבור', images: [IMG.vibeCart, '/images/almond-latte.jpg', IMG.soup, '/images/pistachio-croissant.jpg', IMG.vibeInterior, '/images/latte-jars.jpg', '/images/drink.jpg', '/images/food2.webp', '/images/10096315_1645300577855.jpeg', IMG.beansBag] },
     // מסגרת קטנה (רוחבית)
-    { alt: 'מנות בקפה הדיבור', images: [IMG.sandwich, IMG.croissant] },
-    // מסגרת קטנה (רוחבית) — place + לאטה רוחבי (ממורכז על הכוס) + כריך
+    { alt: 'מנות בקפה הדיבור', images: [IMG.sandwich, '/images/salad-bowl.jpg', IMG.croissant, '/images/table-spread-1.jpg'] },
+    // מסגרת קטנה (רוחבית) — place + לאטה רוחבי (ממורכז על הכוס) + אוכל
     { alt: 'פינות ומנות בקפה הדיבור', images: [IMG.vibeSpace, '/images/coffee-wide.jpg', '/images/food3.jpg'] },
   ],
 }
